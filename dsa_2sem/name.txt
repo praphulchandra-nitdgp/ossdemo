@@ -1,0 +1,253 @@
+Last login: Thu Feb  1 18:17:59 on ttys000
+praphulchandra@Ganapathris-MacBook-Air ~ % brew install apt
+==> Downloading https://formulae.brew.sh/api/formula.jws.json
+################################################################################################################################################################################# 100.0%
+==> Downloading https://formulae.brew.sh/api/cask.jws.json
+################################################################################################################################################################################# 100.0%
+apt: Linux is required for this software.
+Error: apt: An unsatisfied requirement failed this build.
+praphulchandra@Ganapathris-MacBook-Air ~ % brew install git
+==> Downloading https://ghcr.io/v2/homebrew/core/git/manifests/2.43.0
+################################################################################################################################################################################# 100.0%
+==> Fetching dependencies for git: gettext and pcre2
+==> Downloading https://ghcr.io/v2/homebrew/core/gettext/manifests/0.22.4
+################################################################################################################################################################################# 100.0%
+==> Fetching gettext
+==> Downloading https://ghcr.io/v2/homebrew/core/gettext/blobs/sha256:43d00547f4a1036a642c8a41650b483f0054cd239ab4b9ca171563067c8db264
+################################################################################################################################################################################# 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/pcre2/manifests/10.42
+################################################################################################################################################################################# 100.0%
+==> Fetching pcre2
+==> Downloading https://ghcr.io/v2/homebrew/core/pcre2/blobs/sha256:f9abacbf5d8f637449706d2bc3ed80c4d25963c014fcb5bea5bc9e5828badef0
+################################################################################################################################################################################# 100.0%
+==> Fetching git
+==> Downloading https://ghcr.io/v2/homebrew/core/git/blobs/sha256:2c321629c0d47c0384ddf23f58a1edb3dbb4b93e594bcee060d361e2229d9193
+################################################################################################################################################################################# 100.0%
+==> Installing dependencies for git: gettext and pcre2
+==> Installing git dependency: gettext
+==> Downloading https://ghcr.io/v2/homebrew/core/gettext/manifests/0.22.4
+Already downloaded: /Users/praphulchandra/Library/Caches/Homebrew/downloads/3ceb9457127eaa7378dd80ed256098ffb391e2350069becb25cfe2a14f0b7d6d--gettext-0.22.4.bottle_manifest.json
+==> Pouring gettext--0.22.4.arm64_sonoma.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/gettext/0.22.4: 2,042 files, 24.3MB
+==> Installing git dependency: pcre2
+==> Downloading https://ghcr.io/v2/homebrew/core/pcre2/manifests/10.42
+Already downloaded: /Users/praphulchandra/Library/Caches/Homebrew/downloads/6a53794fcaabc5cc5e05b19c02ca9c4c5f2cb9a4d65a5790a6841146465b040f--pcre2-10.42.bottle_manifest.json
+==> Pouring pcre2--10.42.arm64_sonoma.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/pcre2/10.42: 230 files, 6.1MB
+==> Installing git
+==> Pouring git--2.43.0.arm64_sonoma.bottle.tar.gz
+==> Caveats
+The Tcl/Tk GUIs (e.g. gitk, git-gui) are now in the `git-gui` formula.
+Subversion interoperability (git-svn) is now in the `git-svn` formula.
+
+zsh completions and functions have been installed to:
+  /opt/homebrew/share/zsh/site-functions
+==> Summary
+🍺  /opt/homebrew/Cellar/git/2.43.0: 1,638 files, 50.5MB
+==> Running `brew cleanup git`...
+Disable this behaviour by setting HOMEBREW_NO_INSTALL_CLEANUP.
+Hide these hints with HOMEBREW_NO_ENV_HINTS (see `man brew`).
+==> Caveats
+==> git
+The Tcl/Tk GUIs (e.g. gitk, git-gui) are now in the `git-gui` formula.
+Subversion interoperability (git-svn) is now in the `git-svn` formula.
+
+zsh completions and functions have been installed to:
+  /opt/homebrew/share/zsh/site-functions
+praphulchandra@Ganapathris-MacBook-Air ~ % git
+usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           [--super-prefix=<path>] [--config-env=<name>=<envvar>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone     Clone a repository into a new directory
+   init      Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add       Add file contents to the index
+   mv        Move or rename a file, a directory, or a symlink
+   restore   Restore working tree files
+   rm        Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect    Use binary search to find the commit that introduced a bug
+   diff      Show changes between commits, commit and working tree, etc
+   grep      Print lines matching a pattern
+   log       Show commit logs
+   show      Show various types of objects
+   status    Show the working tree status
+
+grow, mark and tweak your common history
+   branch    List, create, or delete branches
+   commit    Record changes to the repository
+   merge     Join two or more development histories together
+   rebase    Reapply commits on top of another base tip
+   reset     Reset current HEAD to the specified state
+   switch    Switch branches
+   tag       Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch     Download objects and refs from another repository
+   pull      Fetch from and integrate with another repository or a local branch
+   push      Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+See 'git help git' for an overview of the system.
+praphulchandra@Ganapathris-MacBook-Air ~ % git --version
+git version 2.39.3 (Apple Git-145)
+praphulchandra@Ganapathris-MacBook-Air ~ % git config --glibal user.name praphulchandra-nitdgp
+error: unknown option `glibal'
+usage: git config [<options>]
+
+Config file location
+    --global              use global config file
+    --system              use system config file
+    --local               use repository config file
+    --worktree            use per-worktree config file
+    -f, --file <file>     use given config file
+    --blob <blob-id>      read config from given blob object
+
+Action
+    --get                 get value: name [value-pattern]
+    --get-all             get all values: key [value-pattern]
+    --get-regexp          get values for regexp: name-regex [value-pattern]
+    --get-urlmatch        get value specific for the URL: section[.var] URL
+    --replace-all         replace all matching variables: name value [value-pattern]
+    --add                 add a new variable: name value
+    --unset               remove a variable: name [value-pattern]
+    --unset-all           remove all matches: name [value-pattern]
+    --rename-section      rename section: old-name new-name
+    --remove-section      remove a section: name
+    -l, --list            list all
+    --fixed-value         use string equality when comparing values to 'value-pattern'
+    -e, --edit            open an editor
+    --get-color           find the color configured: slot [default]
+    --get-colorbool       find the color setting: slot [stdout-is-tty]
+
+Type
+    -t, --type <type>     value is given this type
+    --bool                value is "true" or "false"
+    --int                 value is decimal number
+    --bool-or-int         value is --bool or --int
+    --bool-or-str         value is --bool or string
+    --path                value is a path (file or directory name)
+    --expiry-date         value is an expiry date
+
+Other
+    -z, --null            terminate values with NUL byte
+    --name-only           show variable names only
+    --includes            respect include directives on lookup
+    --show-origin         show origin of config (file, standard input, blob, command line)
+    --show-scope          show scope of config (worktree, local, global, system, command)
+    --default <value>     with --get, use default value when missing entry
+
+praphulchandra@Ganapathris-MacBook-Air ~ % git config --global user.name praphulchandra-nitdgp
+praphulchandra@Ganapathris-MacBook-Air ~ % git config --global user.email praphulchandraganapathri1@gmail.com
+praphulchandra@Ganapathris-MacBook-Air ~ % git config --list
+credential.helper=osxkeychain
+init.defaultbranch=main
+user.name=praphulchandra-nitdgp
+user.email=praphulchandraganapathri1@gmail.com
+praphulchandra@Ganapathris-MacBook-Air ~ % git init
+Initialized empty Git repository in /Users/praphulchandra/.git/
+praphulchandra@Ganapathris-MacBook-Air ~ % mkdir ossdemo
+praphulchandra@Ganapathris-MacBook-Air ~ % cd oss-demo
+cd: no such file or directory: oss-demo
+praphulchandra@Ganapathris-MacBook-Air ~ % cd ossdemo 
+praphulchandra@Ganapathris-MacBook-Air ossdemo % ls -a
+.	..
+praphulchandra@Ganapathris-MacBook-Air ossdemo % git init
+Initialized empty Git repository in /Users/praphulchandra/ossdemo/.git/
+praphulchandra@Ganapathris-MacBook-Air ossdemo % ls -a
+.	..	.git
+praphulchandra@Ganapathris-MacBook-Air ossdemo % git status
+On branch main
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+praphulchandra@Ganapathris-MacBook-Air ossdemo % touch praphul.txt
+praphulchandra@Ganapathris-MacBook-Air ossdemo % nano status
+praphulchandra@Ganapathris-MacBook-Air ossdemo % git add praphul.txt
+praphulchandra@Ganapathris-MacBook-Air ossdemo % git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   praphul.txt
+
+praphulchandra@Ganapathris-MacBook-Air ossdemo % git commit -m
+error: switch `m' requires a value
+praphulchandra@Ganapathris-MacBook-Air ossdemo % nano praphul.txt
+praphulchandra@Ganapathris-MacBook-Air ossdemo % git commit -m   
+error: switch `m' requires a value
+praphulchandra@Ganapathris-MacBook-Air ossdemo % git clone https://github.com/praphulchandra-nitdgp/ossdemo.git
+Cloning into 'ossdemo'...
+warning: You appear to have cloned an empty repository.
+praphulchandra@Ganapathris-MacBook-Air ossdemo % cd ossdemo/
+praphulchandra@Ganapathris-MacBook-Air ossdemo % touch name.txt
+praphulchandra@Ganapathris-MacBook-Air ossdemo % nano name.txt
+
+  UW PICO 5.09                                                                         File: name.txt                                                                         Modified  
+
+praphul chandra
+23f80057 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+^G Get Help                   ^O WriteOut                   ^R Read File                  ^Y Prev Pg                    ^K Cut Text                   ^C Cur Pos                    
+^X Exit                       ^J Justify                    ^W Where is                   ^V Next Pg                    ^U UnCut Text                 ^T To Spell                   
